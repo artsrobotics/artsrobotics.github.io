@@ -73,8 +73,9 @@ author:
   weibo            : # Username
   wikipedia        : # Username
   xing             : # Username
-  youtube          : # Username
-  zhihu            : # Username
+  youtube          : "https://www.youtube.com/@ARTSRobotics"
+  微信公众号        : "机器人自主移动与操作实验室"
+  微信视频号        : "机器人自主移动与操作实验室"
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
