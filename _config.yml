@@ -22,12 +22,12 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.jpg"
+  avatar           : "profile.png"
   name             : "ARTS Robotics"
   pronouns         : # example: "she/her"  
   bio              : "ARTS Robotics at Shenzhen Technology"
-  location         : "Shenzhen"
-  employer         : "Shenzhen Technology Univeristy"
+  location         : "Shenzhen Technology Univeristy"
+  employer         : # URL
   uri              : # URL
   email            : "artsrobotics@outlook.com" 
 
