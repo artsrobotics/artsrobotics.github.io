@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "机器人自主移动与操作实验室 / ARTS Robotics"
+title                    : "机器人自主移动与操作实验室"
 title_separator          : "-"
 name                     : &name "Your Name"
 description              : &description "ARTS Robotics homepage"
