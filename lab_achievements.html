@@ -1,23 +1,86 @@
-<html>
-  <head>
-    <title>实验室成果</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-  </head>
-  <body>
-    <nav>
-      <ul>
-        <li><a href="index.html">返回首页</a></li>
-      </ul>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Achievements</title>
+    <style>
+        :root {
+            --primary-color: #2d3436;  /* Deep Gray */
+            --accent-color: #0984e3;   /* Tech Blue */
+            --text-color: #f5f6fa;
+        }
+        
+        body {
+            background-color: #1e272e;
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+
+        nav {
+            background: var(--primary-color);
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            transition: all 0.3s;
+        }
+
+        nav a:hover {
+            background: rgba(255,255,255,0.1);
+            border-radius: 4px;
+        }
+
+        article {
+            background: #2d3436;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: var(--accent-color);
+            margin-bottom: 1.5rem;
+        }
+
+        a {
+            color: var(--accent-color);
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="index.html">Back to Home</a></li>
+        </ul>
     </nav>
 
     <article>
-      <h1>2025年度实验室重大发现</h1>
-      <p>这里替换为您的实际文章内容...</p>
-      
-      <!-- 本地文件链接示例 -->
-      <p>下载完整报告：
-        <a href="file:///C:/Users/YourName/Documents/report.pdf">PDF版本</a>
-      </p>
+        <h1>2025 Major Laboratory Discovery</h1>
+        <p>Replace this area with your actual research content...</p>
+        
+        <!-- Local file link example -->
+        <p>Download full report:
+            <a href="file:///C:/Users/YourName/Documents/report.pdf">PDF Version</a>
+        </p>
     </article>
-  </body>
+</body>
 </html>
