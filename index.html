@@ -3,80 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Homepage</title>
+    <title>Lab Achievements</title>
     <style>
         :root {
-            --tech-blue: #007bff;       /* 科技蓝 */
-            --light-gray: #f8f9fa;      /* 浅灰背景 */
-            --border-gray: #e0e0e0;     /* 边框灰 */
+            --primary-color: #ffffff;  /* 改为白色 */
+            --accent-color: #2d3436;   /* 主色改为深灰 */
+            --text-color: #333333;     /* 文字改为深色 */
+            --background-color: #f0f0f0; /* 新增浅灰背景 */
         }
-
-        /* 基础样式 */
+        
         body {
-            background-color: var(--light-gray);
-            color: #000000;             /* 所有文字默认黑色 */
-            font-family: Arial, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
             line-height: 1.6;
             margin: 0;
             padding: 20px;
+            font-family: 'Segoe UI', system-ui, sans-serif;
         }
 
-        /* 导航菜单 */
+        /* 导航菜单样式 */
         nav {
-            background-color: #ffffff;  /* 纯白背景 */
-            padding: 1.5rem;
+            background: var(--primary-color);
+            padding: 2rem;
+            border-radius: 8px;
             margin-bottom: 2rem;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            border-radius: 8px;
         }
 
         nav ul {
-            list-style-type: none;
+            list-style: none;
             padding: 0;
             margin: 0;
-            display: flex;
-            gap: 2.5rem;              /* 增加间距 */
-            justify-content: center;
+        }
+
+        nav li {
+            margin: 1.5rem 0;
         }
 
         nav a {
+            display: block;
+            color: var(--accent-color);
             text-decoration: none;
-            color: var(--tech-blue);
-            font-weight: 600;
-            font-size: 1.6rem;         /* 放大1.6倍 */
-            transition: color 0.3s;
+            padding: 1rem;
+            transition: all 0.3s;
+            font-size: 2.5rem; /* 放大2.5倍 */
+            border-left: 4px solid transparent;
         }
 
         nav a:hover {
-            color: #0056b3;            /* 深蓝悬停效果 */
+            border-left-color: var(--accent-color);
+            background: rgba(0,0,0,0.05);
         }
 
-        /* 主标题 */
-        header h1 {
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
+        /* 文章区域 */
+        article {
+            background: var(--primary-color);
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            max-width: 800px;
+            margin: 0 auto;
         }
 
-        header h1 .lab-name {
-            color: var(--tech-blue);
-            font-size: 1.2em;          /* 放大1.2倍 */
-            display: inline-block;
-            padding: 0 0.2em;
+        h1 {
+            color: var(--accent-color);
+            margin-bottom: 2rem;
+            font-size: 2.8rem;
         }
 
-        /* 内容区块 */
-        section {
-            margin: 2rem 0;
-            padding: 2rem;
-            background: #ffffff;
-            border: 1px solid var(--border-gray);
-            border-radius: 10px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        h1 .lab-name {
+            font-size: 1.5em; /* 实验室名称放大1.5倍 */
+            display: block;
+            margin-top: 1rem;
+            color: #0984e3;
+        }
+
+        a {
+            color: #0984e3;
+            font-weight: 600;
         }
     </style>
 </head>
 <body>
-    <!-- 导航菜单 -->
     <nav aria-label="Main navigation">
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -85,15 +93,16 @@
         </ul>
     </nav>
 
-    <header>
-        <h1>Welcome to the GitHub Homepage of <span class="lab-name">Autonomous Mobile Manipulation Robotics Lab</span>!</h1>
-        <p>This is our first static website~ Meow Meow 🐾</p>
-    </header>
-
-    <!-- 最新成果 -->
-    <section aria-labelledby="latest-achievements">
-        <h2 id="latest-achievements">Latest Achievements</h2>
-        <p>Explore our recent research: <a href="lab_achievements.html" aria-label="View lab achievements report">Lab Achievements Report</a></p>
-    </section>
+    <article>
+        <h1>2025 Major Discovery<br>
+            <span class="lab-name">Autonomous Mobile Manipulation Robotics Lab</span>
+        </h1>
+        <p>Replace this area with your actual research content...</p>
+        
+        <!-- 文件链接示例 -->
+        <p>Download full report:
+            <a href="file:///C:/Users/YourName/Documents/report.pdf">PDF Version</a>
+        </p>
+    </article>
 </body>
 </html>
