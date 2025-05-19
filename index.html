@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Homepage</title>
     <style>
-        /* 新增实验室标题样式 */
+        /* 标题样式 */
         header h1 {
             font-size: 1.5em;  /* 原始大小基础上放大1.5倍 */
             color: #0984e3;
             margin-bottom: 1.5rem;
         }
-        /* 新增导航样式 */
+
+        /* 导航菜单样式 */
         .mega-nav {
             background-color: #2d3436;
             padding: 2rem;
@@ -19,8 +20,8 @@
         }
         
         .mega-nav a {
-            display: block; /* 每个链接独占一行 */
-            font-size: calc(3em / 1.3)em; /* 放大三倍 */
+            display: block; /* 保持垂直排列 */
+            font-size: calc(3em / 1.3);  /* 原始3em基础上缩小1.3倍 */
             color: #0984e3;
             text-decoration: none;
             margin: 1rem 0;
@@ -34,12 +35,13 @@
             background: rgba(255,255,255,0.05);
         }
 
-        /* 保持原有其他样式 */
+        /* 基础样式 */
         body {
             background-color: #1e272e;
             color: #f5f6fa;
             line-height: 1.6;
             font-family: 'Segoe UI', system-ui, sans-serif;
+            font-size: 1.1rem;  /* 基准字体大小 */
         }
         
         section {
@@ -51,7 +53,6 @@
     </style>
 </head>
 <body>
-    <!-- 修改后的导航 -->
     <nav class="mega-nav" aria-label="Main navigation">
         <a href="index.html">Home</a>
         <a href="lab_achievements.html">Lab Achievements</a>
@@ -59,14 +60,13 @@
     </nav>
 
     <header>
-        <h1>Welcome to the GitHub Homepage of Autonomous Mobile Manipulation Robotics Lab!</h1>
+        <h1>Welcome to the GitHub Homepage of <span style="font-size:1.5em">Autonomous Mobile Manipulation Robotics Lab</span>!</h1>
         <p>This is our first static website~ Meow Meow 🐾</p>
     </header>
 
-    <!-- 最新成果区块 -->
     <section aria-labelledby="latest-achievements">
         <h2 id="latest-achievements">Latest Achievements</h2>
-        <p>Explore our recent research: <a href="lab_achievements.html" style="font-size: 1.5em;">Lab Achievements Report</a></p>
+        <p>Explore our recent research: <a href="lab_achievements.html">Lab Achievements Report</a></p>
     </section>
 </body>
 </html>
