@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>实验室介绍 - 机器人自主移动与操作实验室</title>
+    <title>Laboratory Introduction - Autonomous Mobile Robotics Lab</title>
     <style>
         :root {
-            --primary-color: #1a73e8;
-            --accent-color: #fbbc04;
-            --text-color: #202124;
+            --primary-color: #2d3436;  /* Deep Gray */
+            --accent-color: #0984e3;   /* Tech Blue */
+            --text-color: #f5f6fa;
         }
         
         * {
@@ -20,15 +20,15 @@
 
         body {
             line-height: 1.8;
-            background: #f8f9fa;
+            background: #1e272e;
             color: var(--text-color);
         }
 
-        /* 导航栏 */
+        /* Navigation */
         .global-nav {
             background: var(--primary-color);
             padding: 1.2rem 5%;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
             position: sticky;
             top: 0;
             z-index: 1000;
@@ -42,7 +42,7 @@
         }
 
         .nav-link {
-            color: white;
+            color: var(--text-color);
             text-decoration: none;
             padding: 0.5rem 1rem;
             border-radius: 4px;
@@ -53,20 +53,20 @@
             background: rgba(255,255,255,0.1);
         }
 
-        /* 主内容区 */
+        /* Main Content */
         .main-container {
             max-width: 1200px;
             margin: 3rem auto;
             padding: 0 2rem;
         }
 
-        /* 研究领域模块 */
+        /* Research Sections */
         .research-section {
-            background: white;
+            background: #2d3436;
             border-radius: 12px;
             padding: 3rem;
             margin-bottom: 3rem;
-            box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
         }
 
         .section-header {
@@ -83,11 +83,10 @@
         }
 
         .tech-card {
-            background: #e8f0fe;
-            border-color: #cbd5e1; 
+            background: #34495e;
             padding: 1.5rem;
             border-radius: 8px;
-            border: 1px solid #e0e6ed;
+            border: 1px solid #3d566e;
         }
 
         .achievement-badge {
@@ -99,7 +98,7 @@
             margin: 1rem 0;
         }
 
-        /* 响应式设计 */
+        /* Responsive Design */
         @media (max-width: 768px) {
             .main-container {
                 padding: 0 1rem;
@@ -118,175 +117,175 @@
 <body>
     <nav class="global-nav">
         <div class="nav-container">
-            <a href="index.html" class="nav-link">🏠 首页</a>
-            <a href="lab_achievements.html" class="nav-link">🏆 研究成果</a>
+            <a href="index.html" class="nav-link">🏠 Home</a>
+            <a href="lab_achievements.html" class="nav-link">🏆 Research Achievements</a>
         </div>
     </nav>
 
     <main class="main-container">
-        <!-- 实验室概况 -->
+        <!-- Lab Overview -->
         <section class="research-section">
             <div class="section-header">
-                <h1>机器人自主移动与操作实验室</h1>
-                <p>深圳技术大学 | 服务国家"20+8"产业集群战略</p>
+                <h1>Autonomous Mobile Robotics Laboratory</h1>
+                <p>Shenzhen Technology University | Serving National "20+8" Industrial Cluster Strategy</p>
             </div>
             
             <div class="tech-grid">
                 <div class="tech-card">
-                    <h3>🔭 战略定位</h3>
-                    <p>围绕非结构化环境下机器人行走与作业的基础科学问题，聚焦：</p>
+                    <h3>🔭 Strategic Positioning</h3>
+                    <p>Focusing on fundamental scientific challenges in robotic mobility and operation in unstructured environments:</p>
                     <ul>
-                        <li>具身智能机器人操作</li>
-                        <li>机器人高动态行走</li>
-                        <li>机器人全景感知</li>
+                        <li>Embodied Intelligent Robot Manipulation</li>
+                        <li>High-Dynamic Robot Locomotion</li>
+                        <li>Omnidirectional Environmental Perception</li>
                     </ul>
                 </div>
                 <div class="tech-card">
-                    <h3>🏗️ 科研环境</h3>
+                    <h3>🏗️ Research Environment</h3>
                     <ul>
-                        <li>国际一流实验设备</li>
-                        <li>千万级科研经费</li>
-                        <li>交叉学科创新平台</li>
+                        <li>World-class Experimental Facilities</li>
+                        <li>10M+ RMB Research Funding</li>
+                        <li>Interdisciplinary Innovation Platform</li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <!-- 方向一：全景感知 -->
+        <!-- Research Direction 1 -->
         <section class="research-section">
             <div class="section-header">
-                <h2>方向一：机器人全景感知</h2>
-                <div class="achievement-badge">国际发明展金奖技术</div>
+                <h2>Direction 1: Omnidirectional Perception</h2>
+                <div class="achievement-badge">International Invention Gold Award</div>
             </div>
             
             <div class="tech-grid">
                 <div class="tech-card">
-                    <h4>技术突破</h4>
+                    <h4>Technical Breakthroughs</h4>
                     <ul>
-                        <li>激光雷达-IMU紧耦合卡尔曼滤波器</li>
-                        <li>动态路径搜索优化算法</li>
-                        <li>三维环境建模误差＜2cm</li>
+                        <li>Lidar-IMU Tightly-coupled Kalman Filter</li>
+                        <li>Dynamic Path Optimization Algorithm</li>
+                        <li>3D Mapping Error <2cm</li>
                     </ul>
                 </div>
                 <div class="tech-card">
-                    <h4>应用成果</h4>
-                    <p>智能火灾预防巡检机器人：</p>
+                    <h4>Application Cases</h4>
+                    <p>Smart Fire Inspection Robot:</p>
                     <ul>
-                        <li>全天候自主导航避障</li>
-                        <li>商场/仓库场景部署</li>
-                        <li>7×24小时常态化巡检</li>
+                        <li>24/7 Autonomous Navigation</li>
+                        <li>Deployed in Malls/Warehouses</li>
+                        <li>Continuous Monitoring System</li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <!-- 方向二：高动态行走 -->
+        <!-- Research Direction 2 -->
         <section class="research-section">
             <div class="section-header">
-                <h2>方向二：机器人高动态行走</h2>
-                <div class="achievement-badge">德国实用新型专利</div>
+                <h2>Direction 2: High-Dynamic Locomotion</h2>
+                <div class="achievement-badge">German Utility Patent</div>
             </div>
             
             <div class="tech-grid">
                 <div class="tech-card">
-                    <h4>核心技术</h4>
+                    <h4>Core Technologies</h4>
                     <ul>
-                        <li>多模态运动机构设计</li>
-                        <li>点云全地形重建算法</li>
-                        <li>模型剪枝加速技术</li>
+                        <li>Multi-modal Movement Mechanism</li>
+                        <li>Point Cloud Terrain Reconstruction</li>
+                        <li>Model Pruning Acceleration</li>
                     </ul>
                 </div>
                 <div class="tech-card">
-                    <h4>典型成果</h4>
-                    <p>轮足式仿生机器人：</p>
+                    <h4>Key Achievements</h4>
+                    <p>Wheel-Legged Bionic Robot:</p>
                     <ul>
-                        <li>复杂地形通过率＞95%</li>
-                        <li>实时响应速度＜200ms</li>
-                        <li>续航时间8小时+</li>
+                        <li>95%+ Complex Terrain Pass Rate</li>
+                        <li><200ms Response Time</li>
+                        <li>8+ Hours Operation</li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <!-- 方向三：智能操作 -->
+        <!-- Research Direction 3 -->
         <section class="research-section">
             <div class="section-header">
-                <h2>方向三：具身智能机器人操作</h2>
-                <div class="achievement-badge">PCT国际专利</div>
+                <h2>Direction 3: Embodied Intelligence</h2>
+                <div class="achievement-badge">PCT International Patent</div>
             </div>
             
             <div class="tech-grid">
                 <div class="tech-card">
-                    <h4>技术创新</h4>
+                    <h4>Technical Innovations</h4>
                     <ul>
-                        <li>小样本技能增量学习</li>
-                        <li>数字孪生控制平台</li>
-                        <li>多层级信息融合技术</li>
+                        <li>Few-shot Skill Incremental Learning</li>
+                        <li>Digital Twin Control Platform</li>
+                        <li>Multi-level Information Fusion</li>
                     </ul>
                 </div>
                 <div class="tech-card">
-                    <h4>应用实例</h4>
-                    <p>试管分拣机器人：</p>
+                    <h4>Implementation Cases</h4>
+                    <p>Test Tube Sorting Robot:</p>
                     <ul>
-                        <li>单次操作＜5.5秒</li>
-                        <li>分拣准确率97.8%</li>
-                        <li>咖啡拉花机器人</li>
+                        <li><5.5s Single Operation</li>
+                        <li>97.8% Sorting Accuracy</li>
+                        <li>Coffee Art Robot</li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <!-- 年度成果 -->
+        <!-- Annual Achievements -->
         <section class="research-section">
             <div class="section-header">
-                <h2>年度科研成果</h2>
-                <div class="achievement-badge">2023年度数据</div>
+                <h2>Annual Research Output</h2>
+                <div class="achievement-badge">2023 Statistics</div>
             </div>
             
             <div class="tech-grid">
                 <div class="tech-card">
-                    <h4>知识产权</h4>
+                    <h4>Intellectual Property</h4>
                     <ul>
-                        <li>国家发明专利8项</li>
-                        <li>国际发明专利3项</li>
-                        <li>德国实用新型专利1项</li>
+                        <li>8 National Patents</li>
+                        <li>3 International Patents</li>
+                        <li>1 German Utility Patent</li>
                     </ul>
                 </div>
                 <div class="tech-card">
-                    <h4>学术成果</h4>
+                    <h4>Academic Output</h4>
                     <ul>
-                        <li>SCI/EI论文4篇</li>
-                        <li>国际发明奖1项</li>
-                        <li>国际学术奖1项</li>
+                        <li>4 SCI/EI Papers</li>
+                        <li>1 International Invention Award</li>
+                        <li>1 Academic Award</li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <!-- 加入我们 -->
+        <!-- Join Us -->
         <section class="research-section">
             <div class="section-header">
-                <h2>加入创新团队</h2>
-                <div class="achievement-badge">2024招生计划</div>
+                <h2>Join Innovation Team</h2>
+                <div class="achievement-badge">2024 Recruitment</div>
             </div>
             
             <div class="tech-grid">
                 <div class="tech-card">
-                    <h4>我们需要</h4>
+                    <h4>Requirements</h4>
                     <ul>
-                        <li>扎实的数学基础</li>
-                        <li>出色的编程能力</li>
-                        <li>勤奋的科研态度</li>
-                        <li>创新思维能力</li>
+                        <li>Strong Mathematical Foundation</li>
+                        <li>Excellent Programming Skills</li>
+                        <li>Dedicated Research Attitude</li>
+                        <li>Innovative Thinking</li>
                     </ul>
                 </div>
                 <div class="tech-card">
-                    <h4>我们提供</h4>
+                    <h4>We Offer</h4>
                     <ul>
-                        <li>国际交流机会</li>
-                        <li>产业合作项目</li>
-                        <li>优厚科研津贴</li>
-                        <li>先进实验平台</li>
+                        <li>Global Collaboration</li>
+                        <li>Industry Partnerships</li>
+                        <li>Competitive Funding</li>
+                        <li>Advanced Facilities</li>
                     </ul>
                 </div>
             </div>
@@ -294,7 +293,7 @@
             <div style="text-align:center; margin-top:2rem;">
                 <a href="mailto:robotics@sztu.edu.cn" 
                    style="background:var(--accent-color); color:white; padding:1rem 2rem; border-radius:8px; text-decoration:none; display:inline-block;">
-                    📩 立即申请加入
+                    📩 Apply Now
                 </a>
             </div>
         </section>
