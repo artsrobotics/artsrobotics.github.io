@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Homepage</title>
     <style>
+        /* 新增实验室标题样式 */
+        header h1 {
+            font-size: 1.5em;  /* 原始大小基础上放大1.5倍 */
+            color: #0984e3;
+            margin-bottom: 1.5rem;
+        }
         /* 新增导航样式 */
         .mega-nav {
             background-color: #2d3436;
@@ -14,7 +20,7 @@
         
         .mega-nav a {
             display: block; /* 每个链接独占一行 */
-            font-size: 3em; /* 放大三倍 */
+            font-size: calc(3em / 1.3)em; /* 放大三倍 */
             color: #0984e3;
             text-decoration: none;
             margin: 1rem 0;
