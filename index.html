@@ -1,25 +1,58 @@
-<html>
-  <head>
-    <title>我的个人主页</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-  </head>
-  <body>
-    <!-- 导航菜单 -->
-    <nav>
-      <ul>
-        <li><a href="index.html">首页</a></li>
-        <li><a href="lab_achievements.html">实验室的成果</a></li>
-        <li><a href="Introdution_to_the_lab.html">实验室的介绍</a></li>
-      </ul>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Homepage</title>
+    <style>
+        /* Basic styling for better presentation */
+        nav {
+            background-color: #f8f9fa;
+            padding: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 1.5rem;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #2d3436;
+            font-weight: 500;
+        }
+        
+        section {
+            margin: 2rem 0;
+            padding: 1.5rem;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="lab_achievements.html">Lab Achievements</a></li>
+            <li><a href="Introdution_to_the_lab.html">Lab Introduction</a></li>
+        </ul>
     </nav>
 
-    <h1>你好，欢迎来到机器人自主移动与操作实验室的GitHub主页！</h1>
-    <p>这是我们的第一个静态网站~喵喵</p>
-    
-    <!-- 新增实验室成果入口 -->
-    <section>
-      <h2>最新成果</h2>
-      <p>点击查看我们的最新研究：<a href="lab_achievements.html">实验室成果报告</a></p>
+    <header>
+        <h1>Welcome to the GitHub Homepage of Autonomous Mobile Manipulation Robotics Lab!</h1>
+        <p>This is our first static website~ Meow Meow 🐾</p>
+    </header>
+
+    <!-- Latest Achievements Section -->
+    <section aria-labelledby="latest-achievements">
+        <h2 id="latest-achievements">Latest Achievements</h2>
+        <p>Explore our recent research: <a href="lab_achievements.html" aria-label="View lab achievements report">Lab Achievements Report</a></p>
     </section>
-  </body>
+</body>
 </html>
