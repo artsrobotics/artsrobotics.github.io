@@ -5,43 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Homepage</title>
     <style>
-        /* Basic styling for better presentation */
-        nav {
-            background-color: #f8f9fa;
-            padding: 1rem;
-            margin-bottom: 2rem;
+        /* 新增导航样式 */
+        .mega-nav {
+            background-color: #2d3436;
+            padding: 2rem;
+            margin-bottom: 3rem;
         }
         
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            gap: 1.5rem;
-        }
-        
-        nav a {
+        .mega-nav a {
+            display: block; /* 每个链接独占一行 */
+            font-size: 3em; /* 放大三倍 */
+            color: #0984e3;
             text-decoration: none;
-            color: #2d3436;
-            font-weight: 500;
+            margin: 1rem 0;
+            padding: 1rem;
+            transition: all 0.3s;
+            border-left: 4px solid transparent;
+        }
+
+        .mega-nav a:hover {
+            border-left-color: #0984e3;
+            background: rgba(255,255,255,0.05);
+        }
+
+        /* 保持原有其他样式 */
+        body {
+            background-color: #1e272e;
+            color: #f5f6fa;
+            line-height: 1.6;
+            font-family: 'Segoe UI', system-ui, sans-serif;
         }
         
         section {
             margin: 2rem 0;
-            padding: 1.5rem;
-            border: 1px solid #e0e0e0;
-            border-radius: 8px;
+            padding: 2rem;
+            background: #2d3436;
+            border-radius: 12px;
         }
     </style>
 </head>
 <body>
-    <!-- Navigation Menu -->
-    <nav aria-label="Main navigation">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="lab_achievements.html">Lab Achievements</a></li>
-            <li><a href="Introdution_to_the_lab.html">Lab Introduction</a></li>
-        </ul>
+    <!-- 修改后的导航 -->
+    <nav class="mega-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="lab_achievements.html">Lab Achievements</a>
+        <a href="Introdution_to_the_lab.html">Lab Introduction</a>
     </nav>
 
     <header>
@@ -49,10 +57,10 @@
         <p>This is our first static website~ Meow Meow 🐾</p>
     </header>
 
-    <!-- Latest Achievements Section -->
+    <!-- 最新成果区块 -->
     <section aria-labelledby="latest-achievements">
         <h2 id="latest-achievements">Latest Achievements</h2>
-        <p>Explore our recent research: <a href="lab_achievements.html" aria-label="View lab achievements report">Lab Achievements Report</a></p>
+        <p>Explore our recent research: <a href="lab_achievements.html" style="font-size: 1.5em;">Lab Achievements Report</a></p>
     </section>
 </body>
 </html>
