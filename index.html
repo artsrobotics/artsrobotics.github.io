@@ -1,108 +1,105 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab Achievements</title>
-    <style>
-        :root {
-            --primary-color: #ffffff;  /* 改为白色 */
-            --accent-color: #2d3436;   /* 主色改为深灰 */
-            --text-color: #333333;     /* 文字改为深色 */
-            --background-color: #f0f0f0; /* 新增浅灰背景 */
-        }
-        
-        body {
-            background-color: var(--background-color);
-            color: var(--text-color);
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-            font-family: 'Segoe UI', system-ui, sans-serif;
-        }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab Homepage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-white text-gray-800">
+    <!-- Navbar -->
+    <header class="bg-gray-900 text-white">
+      <div class="max-w-7xl mx-auto flex justify-between items-center px-4 py-4">
+        <h1 class="text-xl font-bold">Our Lab</h1>
+        <nav class="space-x-4">
+          <a href="#home" class="hover:text-blue-400">Home</a>
+          <a href="#about" class="hover:text-blue-400">About</a>
+          <a href="#team" class="hover:text-blue-400">Team</a>
+          <a href="#projects" class="hover:text-blue-400">Projects</a>
+          <a href="#portfolio" class="hover:text-blue-400">Works</a>
+          <a href="#join" class="hover:text-blue-400">Join Us</a>
+          <a href="#contact" class="hover:text-blue-400">Contact</a>
+        </nav>
+      </div>
+    </header>
 
-        /* 导航菜单样式 */
-        nav {
-            background: var(--primary-color);
-            padding: 2rem;
-            border-radius: 8px;
-            margin-bottom: 2rem;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
+    <!-- Hero Section -->
+    <section id="home" class="relative">
+      <img src="https://placekitten.com/1600/600" alt="Hero Image" class="w-full h-96 object-cover" />
+      <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white">
+        <h2 class="text-4xl font-bold">Innovating the Future of Design & Tech</h2>
+        <div class="mt-6 space-x-4">
+          <a href="#join" class="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded">Join Us</a>
+          <a href="#projects" class="bg-gray-800 hover:bg-gray-700 px-4 py-2 rounded">See Projects</a>
+        </div>
+      </div>
+    </section>
 
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-100">
+      <div class="max-w-5xl mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-4">About Our Lab</h2>
+        <p class="mb-2">Founded in [Year], our lab explores interdisciplinary design with a focus on human-centered innovation, sustainability, and interaction.</p>
+        <p class="mb-2">We belong to [University / School], and are led by Prof. [Name], whose research spans design thinking, UX, and emerging technologies.</p>
+        <p>We promote a culture of openness, creativity, and collaboration across disciplines.</p>
+      </div>
+    </section>
 
-        nav li {
-            margin: 1.5rem 0;
-        }
+    <!-- Team Section -->
+    <section id="team" class="py-16">
+      <div class="max-w-5xl mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-8">Meet the Team</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+          <div class="text-center">
+            <img src="https://placekitten.com/200/200" class="rounded-full mx-auto" />
+            <h3 class="mt-2 font-semibold">Dr. Alice Smith</h3>
+            <p>Lab Director | UX Research</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        nav a {
-            display: block;
-            color: var(--accent-color);
-            text-decoration: none;
-            padding: 1rem;
-            transition: all 0.3s;
-            font-size: 2.5rem; /* 放大2.5倍 */
-            border-left: 4px solid transparent;
-        }
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-gray-100">
+      <div class="max-w-5xl mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-8">Research & Projects</h2>
+        <div class="space-y-6">
+          <div>
+            <h3 class="text-xl font-semibold">Sustainable UX Toolkit</h3>
+            <p class="text-gray-700">An exploration of tools for sustainable digital product development. 2023 – Present. In collaboration with EcoTech Inc.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        nav a:hover {
-            border-left-color: var(--accent-color);
-            background: rgba(0,0,0,0.05);
-        }
-
-        /* 文章区域 */
-        article {
-            background: var(--primary-color);
-            padding: 3rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        h1 {
-            color: var(--accent-color);
-            margin-bottom: 2rem;
-            font-size: 2.8rem;
-        }
-
-        h1 .lab-name {
-            font-size: 1.5em; /* 实验室名称放大1.5倍 */
-            display: block;
-            margin-top: 1rem;
-            color: #0984e3;
-        }
-
-        a {
-            color: #0984e3;
-            font-weight: 600;
-        }
-    </style>
-</head>
-<body>
-    <nav aria-label="Main navigation">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="lab_achievements.html">Lab Achievements</a></li>
-            <li><a href="Introdution_to_the_lab.html">Lab Introduction</a></li>
+    <!-- Works / Publications -->
+    <section id="portfolio" class="py-16">
+      <div class="max-w-5xl mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-8">Works & Publications</h2>
+        <ul class="list-disc list-inside space-y-2">
+          <li><strong>2024:</strong> "Human-centered AI Systems" – Published in Design Journal (DOI)</li>
         </ul>
-    </nav>
+      </div>
+    </section>
 
-    <article>
-        <h1>2025 Major Discovery<br>
-            <span class="lab-name">Autonomous Mobile Manipulation Robotics Lab</span>
-        </h1>
-        <p>Replace this area with your actual research content...</p>
-        
-        <!-- 文件链接示例 -->
-        <p>Download full report:
-            <a href="file:///C:/Users/YourName/Documents/report.pdf">PDF Version</a>
-        </p>
-    </article>
-</body>
+    <!-- Join Us Section -->
+    <section id="join" class="py-16 bg-gray-100">
+      <div class="max-w-5xl mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-4">Join Our Lab</h2>
+        <p class="mb-2">We welcome graduate students, interns, and collaborators. Current openings in UX, AI & Interaction Design.</p>
+        <p>Send us your portfolio and resume at [email@email.com].</p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <footer id="contact" class="bg-gray-900 text-white py-12">
+      <div class="max-w-5xl mx-auto px-4">
+        <h2 class="text-xl font-bold mb-4">Contact Us</h2>
+        <p>Email: lab@university.edu</p>
+        <p>Address: 123 Innovation Rd, City, Country</p>
+        <p>Follow us: Instagram | WeChat | Behance</p>
+      </div>
+    </footer>
+  </body>
 </html>
